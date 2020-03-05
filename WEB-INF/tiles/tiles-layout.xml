@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+
+	"http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+
+	
+
+<tiles-definitions>
+
+	<definition name="mainTemplate" template="/WEB-INF/jsp/egovframework/example/cmmn/default-layouts.jsp">
+
+		<put-attribute name="title"		value="전자정부프레임워크 따라하기" />
+
+		<put-attribute name="header"	value="/WEB-INF/jsp/egovframework/example/cmmn/default-header.jsp" />
+
+		<put-attribute name="menu"		value="/WEB-INF/jsp/egovframework/example/cmmn/default-menu.jsp" />
+
+		<put-attribute name="content"	value="" />
+
+		<put-attribute name="footer"	value="/WEB-INF/jsp/egovframework/example/cmmn/default-footer.jsp" />
+
+	</definition>
+
+	
+
+        <!-- 아래 name을 "/sample/egovSampleList"라고 정합니다.
+
+               "/sample/egovSampleLIst"는 컨트롤러가 리턴하는 값입니다.
+
+               컨트롤러에서 리턴할 때 맨앞에 "/"가 포함되어 있다는 점을 잊지 마세요. -->
+
+	<definition name="/sample/egovSampleList" extends="mainTemplate">
+
+		<put-attribute name="title"		value="Contact Manager" />
+
+		<put-attribute name="header"	value="/WEB-INF/jsp/egovframework/example/cmmn/default-header.jsp" />
+
+		<put-attribute name="menu"		value="/WEB-INF/jsp/egovframework/example/cmmn/default-menu.jsp" />
+
+		<put-attribute name="content"	value="/WEB-INF/jsp/egovframework/example/sample/egovSampleList.jsp" />
+
+		<put-attribute name="footer"	value="/WEB-INF/jsp/egovframework/example/cmmn/default-footer.jsp" />
+
+	</definition>
+
+</tiles-definitions>
